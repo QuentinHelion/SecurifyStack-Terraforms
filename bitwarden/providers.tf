@@ -9,9 +9,9 @@ terraform {
 }
 
 provider "proxmox" {
-  pm_api_url      = var.pmurl
-  pm_user         = var.pmuser
-  pm_password     = var.pmpassword
+  pm_api_url      = var.pm_api_url
+  pm_user         = var.pm_user
+  pm_password     = var.pm_password
   pm_tls_insecure = true
 }
 
