@@ -59,4 +59,18 @@ variable "ssh-certificat-path" {
     default     = "~/.ssh/id_rsa"
 }
 
+variable "pm_api_url" {
+    description = "Proxmox api url"
+    type        = string
+}
+
+variable "pm_user" {
+    description = "Proxmox user"
+    type        = string
+}
+
+variable "pmp_assword" {
+    description = "Proxmox user password"
+    type        = string
+}
 
