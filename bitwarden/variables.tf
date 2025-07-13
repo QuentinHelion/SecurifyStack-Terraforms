@@ -53,6 +53,11 @@ variable "network-gw" {
     type        = string
 }
 
+variable "network-mask" {
+    description = "LXC gateway"
+    type        = string
+}
+
 variable "ssh-certificat-path" {
     description = "SSH certificat location"
     type        = string
