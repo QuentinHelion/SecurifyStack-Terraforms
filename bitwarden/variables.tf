@@ -69,7 +69,7 @@ variable "pm_user" {
     type        = string
 }
 
-variable "pmp_assword" {
+variable "pm_password" {
     description = "Proxmox user password"
     type        = string
 }
