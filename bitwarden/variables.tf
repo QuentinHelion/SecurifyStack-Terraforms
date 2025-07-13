@@ -79,3 +79,8 @@ variable "pm_password" {
     type        = string
 }
 
+variable "pm_tls_insecure" {
+    description = "Enable tls insecure"
+    type        = bool
+    default     = true
+}
