@@ -84,3 +84,9 @@ variable "pm_tls_insecure" {
     type        = bool
     default     = true
 }
+
+variable "bitwarden_email" {
+  description = "Email administrateur pour Bitwarden"
+  type        = string
+  default     = "email@example.com"
+}
