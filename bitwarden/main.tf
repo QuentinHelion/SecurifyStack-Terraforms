@@ -46,7 +46,7 @@ resource "proxmox_lxc" "bitwarden" {
       type        = "ssh"
       user        = "root"
       private_key = file("~/.ssh/id_rsa")
-      host        = "192.170.10.200"
+      host        = var.network-ip
     }
   }
   
