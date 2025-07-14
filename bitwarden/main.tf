@@ -36,6 +36,7 @@ resource "proxmox_lxc" "bitwarden" {
       "usermod -aG docker bitwarden",
       "apt install curl -y",
       "su - bitwarden",
+      "cd",
       "curl -Lso bitwarden.sh 'https://func.bitwarden.com/api/dl/?app=self-host&platform=linux' && chmod 700 bitwarden.sh",
       "printf 'y\n192.170.10.200\nn\nvault\n' | ./bitwarden.sh install --agree-to-terms --email email@example.com",
       "printf 'y\n' | ./bitwarden.sh start"
